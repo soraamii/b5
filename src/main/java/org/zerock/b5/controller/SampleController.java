@@ -18,13 +18,13 @@ public class SampleController {
     log.info("doAll...............");
   }
   
-    @PreAuthorize("hasRole('USER')")
+  @PreAuthorize("hasRole('USER')")
   @GetMapping("/user")
   public void doUser() {
     log.info("douser...............");
   }
 
-    @PreAuthorize("hasRole('G2')")
+  @PreAuthorize("hasRole('G2')")
   @GetMapping("/g1")
   public void doG1() {
     log.info("doG1...............");
